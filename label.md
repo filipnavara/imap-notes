@@ -6,7 +6,9 @@ Thunderbird uses the `$Label<number>` and maps the labels to names locally.
 
 ## Apple Mail
 
-Apple Mail uses `$MailFlagBit<number>` and maps the values 0, 1, 2 to ???
+Apple Mail uses `$MailFlagBit[012]`. A message with a `\Flagged` keyword is consider to be flagged. By default the flag is red but an additional color is specified by a combination of the `$MailFlagBit0`, `$MailFlagBit1` and `$MailFlagBit2` flags. Together they form a 3-bit number that maps to a color through a translation table.
+
+TODO: Add the mapping table
 
 ## IceWarp WebMail (and eM Client w/ IceWarp Server)
 
@@ -33,4 +35,4 @@ Use `X-GM-LABELS` FETCH/STORE keyword.
 
 ## TODO
 
-- Annotations / Metadata / Colors in METADATA
+- Define addition METADATA to specify a list of labels for UI selection, and their color mapping.

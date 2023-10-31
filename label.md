@@ -1,4 +1,4 @@
-#
+# Lables
 
 ## Thunderbird
 
@@ -27,18 +27,10 @@ Example:
 - `Vacation` => `Vacation`
 - `naïve person` => `na'C3'AFve_person`
 
-# Gmail
+## Gmail
 
 Use `X-GM-LABELS` FETCH/STORE keyword.
 
 ## TODO
 
 - Annotations / Metadata / Colors in METADATA
-
-- "/vendor/emclient/snooze/snoozed"
-- "/vendor/emclient/snooze/until"
-- "/vendor/emclient/reply/notifyWhenNotReplied"
-- "/vendor/emclient/reply/notifyWhenNotRepliedUntil"
-- "/vendor/emclient/reply/notifyWhenReplied"
-
-- `$SnoozedUntil_MIN` / `$SnoozedUntil_<unix time>` / `$NotifyWhenNotReplied_MIN` / `$NotifyWhenNotReplied_<unix time>` / `$NotifyWhenReplied`

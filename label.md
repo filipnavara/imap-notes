@@ -32,6 +32,8 @@ Example:
 - `Vacation` => `Vacation`
 - `naïve person` => `na'C3'AFve+person`
 
+Rationale: The original encoding was done in PHP with `urlencode` API. This was later amended with the `%` to `'` change to make it a valid syntax. Early versions of the WebMail/server used the `%` character but it was fixed due to sync issues with Apple Mail.
+
 ## eM Client with Dovecot, Surgemail, SmarterMail
 
 Use the following transformation for each character:
@@ -42,6 +44,8 @@ Use the following transformation for each character:
 Example:
 - `Vacation` => `Vacation`
 - `naïve person` => `na'C3'AFve_person`
+
+Rationale: The keyword in IMAP is defined as `atom` in the ABNF, and non-ASCII characters are currently allowed in IMAP. This scheme translates all atom special characters (and few more) into an escaped notation. Space is an exception that gets a different treatment for readability.
 
 ## Gmail
 

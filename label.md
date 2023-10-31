@@ -17,6 +17,13 @@ Apple Mail uses `$MailFlagBit[012]`. A message with a `\Flagged` keyword is cons
 
 TODO: Add the mapping table
 
+## Open-Xchange
+
+Web Mail uses `$cl_<number>` for colored flags.
+
+TODO: Fill in the mapping table
+TODO: Classifications ($Social, etc.)
+
 ## IceWarp WebMail (and eM Client w/ IceWarp Server)
 
 Arbitrary labels are URI encoded, then `%20` is replaced with `+`, and `%` is replaced with `'`. Labels starting with `\` and `$` are not colliding because the characters would get encoded as `'5C` and `'24` respectively.

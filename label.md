@@ -33,6 +33,28 @@ Example:
 
 Use `X-GM-LABELS` FETCH/STORE keyword.
 
+### Automatic classification
+
+Orthogonal but related thing is **automatic** classification done by some clients and servers, such as Gmail. Common categories are the following:
+- Personal
+- Social
+- Promotions
+- Updates
+- Forums
+
+Gmail used to expose them when the classification was still part of Google Labs. Once it graduated into production they were removed from most of the IMAP commands except for SEARCH.
+
+## Other commonly observed $-prefixed keywords
+
+- `$HasAttachment` / `$HasNoAttachment`
+- `$IsMailingList`
+- `$IsNotification`
+- `$Junk` / `$NotJunk`
+- `$HasTD` (any idea?)
+- `$IsTrusted`
+- `$X-ME-Annot-2` (iCloud?)
+- `$purchases`
+
 ## TODO
 
 - Define addition METADATA to specify a list of labels for UI selection, and their color mapping.

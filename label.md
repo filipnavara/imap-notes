@@ -4,6 +4,13 @@
 
 Thunderbird uses the `$Label<number>` and maps the labels to names locally.
 
+Default mapping in Thunderbird (TODO):
+- Important (red)
+- Work (yellow/orange)
+- Personal (green)
+- To Do (blue)
+- Later (purple)
+
 ## Apple Mail
 
 Apple Mail uses `$MailFlagBit[012]`. A message with a `\Flagged` keyword is consider to be flagged. By default the flag is red but an additional color is specified by a combination of the `$MailFlagBit0`, `$MailFlagBit1` and `$MailFlagBit2` flags. Together they form a 3-bit number that maps to a color through a translation table.
